@@ -1,0 +1,30 @@
+:root{
+    --title-bg-color:rgb(230,75,60);
+    --bg-color:rgb(235,240,240);
+}
+
+#ranulf{
+    grid-area: A;
+}
+
+#Yuki{
+    grid-area: B;
+}
+
+#Neko{
+    grid-area: C;
+}
+
+header
+{
+    background-color: var(--title-bg-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 3, 1fr;
+    background-color: var(--bg-color);
+}
