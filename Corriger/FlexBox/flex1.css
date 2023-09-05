@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #CCDDFF;
+    --secondary: #CCFFDD;
+    --tertiary: #FFDDCC;
+    --light: white;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:    "H H H"
+                            "N M A"
+                            "F F F";
+}
+
+header{
+    background-color: var(--primary);
+    grid-area: H;
+    text-align: center;
+}
+
+nav{
+    background-color: #FFDDCC;
+    grid-area: N;
+    padding: 1rem;
+}
+
+main{
+    background-color: var(--secondary);
+    grid-area: M;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    align-content: flex-start;
+    gap: 1rem;
+}
+
+h2{
+    width: 100%;
+}
+
+article{
+    border: 1px solid black;
+    background-color: var(--light);
+    width: 35%;
+    height: 10%;
+}
+
+aside{
+    background-color: var(--tertiary);
+    grid-area: A;
+}
+
+footer{
+    background-color: var(--primary);
+    grid-area: F;
+    text-align: center;
+    padding: 2rem;
+}
+
+ul{
+    list-style-type: none;  
+    padding-left: 0;
+}
+
+ul.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
+
+ul.menu li{
+    background-color: var(--light);
+    padding: 1rem;
+}
+
+a {
+    display: block;
+    text-decoration:underline;
+    transition: all ease 2s;
+    border: 1px solid black;
+    background-color: var(--light);
+    padding: 1em;
+    align-items:center;
+    margin: 0.5em;
+}
+
+aside{
+    
+}
+
+a:hover {
+    text-decoration: overline;
+    transform: rotate(30deg);
+}
